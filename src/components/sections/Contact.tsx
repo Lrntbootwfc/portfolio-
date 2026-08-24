@@ -164,7 +164,7 @@ export default function Contact() {
                       </div>
                       <div className="flex flex-col">
                         <span className="text-xs font-mono font-medium text-ink-500">Email</span>
-                        <span className="text-sm font-medium text-ink-900">{profile.email}</span>
+                        <span className="text-sm font-medium text-ink-900">Send an Email</span>
                       </div>
                     </div>
                     <ArrowUpRight className="h-4 w-4 text-ink-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-ink-900" />
@@ -184,7 +184,7 @@ export default function Contact() {
                       <div className="flex flex-col">
                         <span className="text-xs font-mono font-medium text-ink-500">LinkedIn</span>
                         <span className="text-sm font-medium text-ink-900">
-                          {profile.linkedinUsername}
+                          Connect on LinkedIn
                         </span>
                       </div>
                     </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                       <div className="flex flex-col">
                         <span className="text-xs font-mono font-medium text-ink-500">GitHub</span>
                         <span className="text-sm font-medium text-ink-900">
-                          {profile.githubUsername}
+                          View GitHub Profile
                         </span>
                       </div>
                     </div>
@@ -250,11 +250,10 @@ export default function Contact() {
                         setFormData({ ...formData, name: e.target.value });
                         if (errors.name) setErrors({ ...errors, name: undefined });
                       }}
-                      className={`w-full rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:outline-none transition-colors ${
-                        errors.name
+                      className={`w-full rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:outline-none transition-colors ${errors.name
                           ? 'border-red-500 focus:border-red-500'
                           : 'border-paper-300 focus:border-ink-800'
-                      }`}
+                        }`}
                     />
                     {errors.name && (
                       <span className="flex items-center gap-1 text-xs text-red-600 font-medium">
@@ -278,11 +277,10 @@ export default function Contact() {
                           setFormData({ ...formData, contactMethod: 'email' });
                           if (errors.phone) setErrors({ ...errors, phone: undefined });
                         }}
-                        className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 px-4 text-xs font-mono font-medium transition-all ${
-                          formData.contactMethod === 'email'
+                        className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 px-4 text-xs font-mono font-medium transition-all ${formData.contactMethod === 'email'
                             ? 'border-ink-900 bg-ink-900 text-paper-100'
                             : 'border-paper-300 bg-paper-100 text-ink-700 hover:border-ink-400'
-                        }`}
+                          }`}
                       >
                         <Mail className="h-3.5 w-3.5" />
                         Email
@@ -294,11 +292,10 @@ export default function Contact() {
                           setFormData({ ...formData, contactMethod: 'phone' });
                           if (errors.email) setErrors({ ...errors, email: undefined });
                         }}
-                        className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 px-4 text-xs font-mono font-medium transition-all ${
-                          formData.contactMethod === 'phone'
+                        className={`flex items-center justify-center gap-2 rounded-xl border py-2.5 px-4 text-xs font-mono font-medium transition-all ${formData.contactMethod === 'phone'
                             ? 'border-ink-900 bg-ink-900 text-paper-100'
                             : 'border-paper-300 bg-paper-100 text-ink-700 hover:border-ink-400'
-                        }`}
+                          }`}
                       >
                         <Phone className="h-3.5 w-3.5" />
                         Phone number
@@ -318,11 +315,10 @@ export default function Contact() {
                             setFormData({ ...formData, email: e.target.value });
                             if (errors.email) setErrors({ ...errors, email: undefined });
                           }}
-                          className={`w-full rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:outline-none transition-colors ${
-                            errors.email
+                          className={`w-full rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:outline-none transition-colors ${errors.email
                               ? 'border-red-500 focus:border-red-500'
                               : 'border-paper-300 focus:border-ink-800'
-                          }`}
+                            }`}
                         />
                         {errors.email && (
                           <span className="flex items-center gap-1 text-xs text-red-600 font-medium">
@@ -343,11 +339,10 @@ export default function Contact() {
                             setFormData({ ...formData, phone: e.target.value });
                             if (errors.phone) setErrors({ ...errors, phone: undefined });
                           }}
-                          className={`w-full rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:outline-none transition-colors ${
-                            errors.phone
+                          className={`w-full rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:outline-none transition-colors ${errors.phone
                               ? 'border-red-500 focus:border-red-500'
                               : 'border-paper-300 focus:border-ink-800'
-                          }`}
+                            }`}
                         />
                         {errors.phone && (
                           <span className="flex items-center gap-1 text-xs text-red-600 font-medium">
@@ -376,11 +371,10 @@ export default function Contact() {
                           setFormData({ ...formData, projectType: e.target.value });
                           if (errors.projectType) setErrors({ ...errors, projectType: undefined });
                         }}
-                        className={`w-full appearance-none rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 focus:outline-none transition-colors ${
-                          errors.projectType
+                        className={`w-full appearance-none rounded-xl border bg-paper-100 px-4 py-3 text-sm text-ink-900 focus:outline-none transition-colors ${errors.projectType
                             ? 'border-red-500 focus:border-red-500'
                             : 'border-paper-300 focus:border-ink-800'
-                        } ${!formData.projectType ? 'text-ink-400' : ''}`}
+                          } ${!formData.projectType ? 'text-ink-400' : ''}`}
                       >
                         <option value="" disabled>
                           Select project type...
@@ -434,9 +428,8 @@ export default function Contact() {
                         id="project-budget"
                         value={formData.budget}
                         onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className={`w-full appearance-none rounded-xl border border-paper-300 bg-paper-100 px-4 py-3 text-sm text-ink-900 focus:border-ink-800 focus:outline-none transition-colors ${
-                          !formData.budget ? 'text-ink-400' : ''
-                        }`}
+                        className={`w-full appearance-none rounded-xl border border-paper-300 bg-paper-100 px-4 py-3 text-sm text-ink-900 focus:border-ink-800 focus:outline-none transition-colors ${!formData.budget ? 'text-ink-400' : ''
+                          }`}
                       >
                         <option value="">Select budget range (optional)...</option>
                         {BUDGET_OPTIONS.map((opt) => (
@@ -498,8 +491,7 @@ export default function Contact() {
                         href={`mailto:${profile.email}?subject=Project Enquiry: ${encodeURIComponent(
                           formData.projectType || 'New Project'
                         )}&body=${encodeURIComponent(
-                          `Hi Divya,\n\nName: ${formData.name}\nContact: ${
-                            formData.contactMethod === 'email' ? formData.email : formData.phone
+                          `Hi Divya,\n\nName: ${formData.name}\nContact: ${formData.contactMethod === 'email' ? formData.email : formData.phone
                           }\nProject: ${formData.projectType}\nBudget: ${formData.budget}\n\nDetails:\n${formData.description}`
                         )}`}
                         className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-accent-500 hover:underline pt-1"

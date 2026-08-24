@@ -25,11 +25,11 @@ export default function Footer() {
             <a href="/#work" className="transition-colors hover:text-ink-900">
               Work
             </a>
-            <a href="/#about" className="transition-colors hover:text-ink-900">
-              About
-            </a>
             <a href="/#experience" className="transition-colors hover:text-ink-900">
               Experience
+            </a>
+            <a href="/#about" className="transition-colors hover:text-ink-900">
+              About
             </a>
             <a href="/#contact" className="transition-colors hover:text-ink-900">
               Contact

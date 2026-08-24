@@ -251,10 +251,12 @@ export default function FeaturedProjects() {
                 <div className="flex flex-col gap-3 lg:col-span-5">
                   <ProjectScreenshot
                     candidates={[
+                      'comic result1.png',
+                      'comic result 1.png',
+                      'comic result1',
                       'compilercomicdiary having examples  (1).png',
                       'compilercomicdiary-example-1.png',
                       'compilercomicdiary having examples (1).png',
-                      'comic compilercomicdiary.png',
                       'editorcomicdiary.png',
                       'dashboardcomic diary.png',
                     ]}
@@ -268,10 +270,12 @@ export default function FeaturedProjects() {
                   {/* Secondary Preview - Comic Result 2 */}
                   <ProjectScreenshot
                     candidates={[
+                      'comic result 2.png',
+                      'comic result2.png',
+                      'comic result 2',
                       'compilercomicdiary having examples  (2).png',
                       'compilercomicdiary-example-2.png',
                       'compilercomicdiary having examples (2).png',
-                      'comic compilercomicdiary.png',
                       'editorcomicdiary.png',
                       'dashboardcomic diary.png',
                     ]}

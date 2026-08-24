@@ -11,22 +11,22 @@ export const profile = {
   email: 'divyasharmagdscoist@gmail.com', // Primary contact email
   githubUsername: 'Lrntbootwfc',
   linkedinUsername: 'divya-sharma6467',
-  resumeUrl: '#', // TODO: replace with real resume PDF
+  resumeUrl: '/Divya_Sharma_Resume.pdf',
   socials: [
     {
       label: 'Email',
       url: 'mailto:divyasharmagdscoist@gmail.com',
-      identifier: 'divyasharmagdscoist@gmail.com',
+      identifier: 'Send an Email',
     },
     {
       label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/divya-sharma6467',
-      identifier: 'divya-sharma6467',
+      identifier: 'Connect on LinkedIn',
     },
     {
       label: 'GitHub',
       url: 'https://github.com/Lrntbootwfc',
-      identifier: 'Lrntbootwfc',
+      identifier: 'View GitHub Profile',
     },
   ],
 };
@@ -297,33 +297,29 @@ export const projects: Project[] = [
     liveUrl: 'https://comic-diary.onrender.com/',
     imageCandidates: {
       primary: [
+        'comic result1.png',
+        'comic result 2.png',
         'compilercomicdiary having examples  (1).png',
-        'compilercomicdiary-example-1.png',
         'compilercomicdiary having examples  (2).png',
-        'compilercomicdiary-example-2.png',
-        'comic compilercomicdiary.png',
         'editorcomicdiary.png',
         'dashboardcomic diary.png',
       ],
       gallery: [
+        'comic result1.png',
+        'comic result 2.png',
         'compilercomicdiary having examples  (1).png',
-        'compilercomicdiary-example-1.png',
         'compilercomicdiary having examples  (2).png',
-        'compilercomicdiary-example-2.png',
       ],
       dashboard: [
-        'dashboard-comicdiary.png',
         'dashboardcomic diary.png',
         'editorcomicdiary.png',
-        'insights-comicdiary.png',
         'insightscomic diary.png',
       ],
       architecture: [
-        'comic-compiler-comicdiary.png',
-        'comic compilercomicdiary.png',
+        'comic result1.png',
+        'comic result 2.png',
         'messengercomicdiary.png',
-        'movies-books-comicdiary.png',
-        'moviesand books comic diary.png',
+        'editorcomicdiary.png',
       ],
     },
     visualFlow: [

@@ -694,16 +694,16 @@ function ComicDiaryArtifacts() {
 
   const comicShots = [
     {
-      candidate: 'compilercomicdiary having examples  (1).png',
-      candidates: ['compilercomicdiary-example-1.png', 'compilercomicdiary having examples  (1).png', 'compilercomicdiary having examples (1).png'],
+      candidate: 'comic result1.png',
+      candidates: ['comic result1.png', 'comic result 1.png', 'comic result1', 'compilercomicdiary having examples  (1).png'],
       title: '01. Compiled Comic Strip Result 01',
       alt: 'Comic Diary Strip Sample 1',
       category: 'Generation Output',
       caption: 'Multi-panel comic output with expressive dialogue bubbles and contextual layouts.',
     },
     {
-      candidate: 'compilercomicdiary having examples  (2).png',
-      candidates: ['compilercomicdiary-example-2.png', 'compilercomicdiary having examples  (2).png', 'compilercomicdiary having examples (2).png'],
+      candidate: 'comic result 2.png',
+      candidates: ['comic result 2.png', 'comic result2.png', 'comic result 2', 'compilercomicdiary having examples  (2).png'],
       title: '02. Compiled Comic Strip Result 02',
       alt: 'Comic Diary Strip Sample 2',
       category: 'Generation Output',

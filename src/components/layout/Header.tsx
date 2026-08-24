@@ -7,12 +7,12 @@ import { profile } from '@/data/portfolio';
 
 const navLinks = [
   { label: 'Work', href: '/#work' },
-  { label: 'About', href: '/#about' },
   { label: 'Experience', href: '/#experience' },
+  { label: 'About', href: '/#about' },
   { label: 'Contact', href: '/#contact' },
 ];
 
-const sectionIds = ['work', 'about', 'experience', 'contact'];
+const sectionIds = ['work', 'experience', 'about', 'contact'];
 
 export default function Header() {
   const scrolled = useScrollPosition(20);
@@ -40,11 +40,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
           ? 'border-b border-paper-300 bg-paper-100/85 backdrop-blur-md'
           : 'border-b border-transparent bg-transparent'
-      }`}
+        }`}
     >
       <div className="container-content flex h-16 items-center justify-between lg:h-20">
         {/* Name / logo */}
@@ -61,11 +60,10 @@ export default function Header() {
             <Link
               key={link.label}
               to={link.href}
-              className={`text-sm transition-colors duration-200 ${
-                isActive(link.href)
+              className={`text-sm transition-colors duration-200 ${isActive(link.href)
                   ? 'text-ink-900 font-medium'
                   : 'text-ink-500 hover:text-ink-900'
-              }`}
+                }`}
             >
               {link.label}
             </Link>
@@ -76,6 +74,7 @@ export default function Header() {
         <div className="hidden items-center gap-5 md:flex">
           <a
             href={profile.resumeUrl}
+            download="Divya_Sharma_Resume.pdf"
             className="group inline-flex items-center gap-1 text-sm text-ink-500 transition-colors hover:text-ink-900"
             target="_blank"
             rel="noopener noreferrer"
@@ -120,6 +119,7 @@ export default function Header() {
             <div className="mt-6 flex flex-col gap-4">
               <a
                 href={profile.resumeUrl}
+                download="Divya_Sharma_Resume.pdf"
                 className="inline-flex items-center gap-2 text-base text-ink-600"
                 target="_blank"
                 rel="noopener noreferrer"
